@@ -1,7 +1,7 @@
 # xins
 ### XML Interface for Network Services
 
-A Java Framework to create XML-RPC APIs
+A Java Framework to create remote APIs
 
 #### Description:
 * XINS is a web application framework.
