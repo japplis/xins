@@ -27,7 +27,6 @@ A Java Framework to create remote APIs
 * [XINS documentation](https://github.com/japplis/xins-docs) Source code for the documentation
 * [XINS examples](https://github.com/japplis/xins-examples) Examples of API's client and server side.
 * [XINS GUI](https://github.com/japplis/xins-gui) User interface for creating and viewing API's
-* [XINS Website](https://github.com/japplis/xins-website) Website https://www.xins.org
 
 #### Quick start:
 If you have chosen "Compile and run demo" with the Windows installer, you can directly go to the specdocs (https://www.xins.org/demo/xins-project/build/specdocs/myproject/index.html)
