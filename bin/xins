@@ -1,0 +1,63 @@
+#!/bin/sh
+#
+# Bootstraps the XINS execution program, by means of an Ant build file,
+# bootstrap.xml.
+#
+# $Id: xins,v 1.34 2010/04/24 15:03:52 agoubard Exp $
+
+# Determine whether XINS_HOME is set
+if [ "${XINS_HOME}" = "" ]; then
+
+   # Determine script directory
+   __DIRNAME__=`dirname $0`
+
+   # Assume the parent of the script directory is the XINS home directory
+   XINS_HOME=`dirname ${__DIRNAME__}`
+   if [ "${XINS_VERBOSE}" = "true" ]; then
+      echo "XINS_HOME not set, assuming: ${XINS_HOME}"
+   fi
+fi
+
+# Decide if XINS_HOME is valid by checking if make-build.xml exists
+BOOT_XML="${XINS_HOME}/src/ant/make-build.xml"
+if [ ! -f "${BOOT_XML}" ]; then
+   echo "ERROR: Unable to determine XINS home directory. Please set XINS_HOME correctly."
+   exit 1
+fi
+
+# Recognize '-version' (or 'version') option
+if [ "$1" = "-version" ] || [ "$1" = "version" ]; then
+   ant -q -f ${XINS_HOME}/build.xml version
+   exit 0
+fi
+
+# Detect Cygwin
+case "`uname`" in
+   CYGWIN*)
+      __CYGWIN__=true
+      ;;
+   *)
+      __CYGWIN__=false
+      ;;
+esac
+
+# Determine current directory
+CURR_DIR=`pwd`
+if [ "${__CYGWIN__}" = "true" ]; then
+   CURR_DIR=`cygpath --windows ${CURR_DIR}`
+fi
+
+# Creates the buid file if needed
+first_target=$1
+if [ "$1" = "" ]; then
+   first_target=help
+fi
+ant -Dxins_home=${XINS_HOME} -Dfirst_target=${first_target} -q -f ${XINS_HOME}/src/ant/make-build.xml
+if [ "$1" = "-version" ] || [ "$1" = "version" ]; then
+   exit 0
+fi
+
+# Run Ant against the build file, if the build file was created
+if [ "$?" = "0" ]; then
+   ant -Dxins_home=${XINS_HOME} -logger org.apache.tools.ant.NoBannerLogger -f build/build.xml $*
+fi

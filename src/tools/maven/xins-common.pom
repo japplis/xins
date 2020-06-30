@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.xins</groupId>
+	<artifactId>xins-common</artifactId>
+	<version>3.1</version>
+	<packaging>jar</packaging>
+	<name>XINS common library</name>
+	<url>http://www.xins.org</url>
+	<description>The XINS common library</description>
+	<licenses>
+		<license>
+			<name>The BSD License</name>
+			<url>http://xins.sourceforge.net/COPYRIGHT</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>http://xins.cvs.sourceforge.net/xins/</url>
+	</scm>
+	<developers>
+		<developer>
+			<id>agoubard</id>
+			<name>Anthony Goubard</name>
+			<email>anthony.goubard@japplis.com</email>
+			<url>http://www.japplis.com</url>
+			<organization>Japplis</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>znerd</id>
+			<name>Ernst de Haan</name>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>xmlenc</groupId>
+			<artifactId>xmlenc</artifactId>
+			<version>0.52</version>
+		</dependency>
+		<dependency>
+			<groupId>org.znerd</groupId>
+			<artifactId>logdoc</artifactId>
+			<version>1.0-rc2</version>
+		</dependency>
+	</dependencies>
+</project>

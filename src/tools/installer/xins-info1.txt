@@ -1,0 +1,11 @@
+
+XINS requires the following software to be installed:
+ - Java (JDK): http://www.oracle.com/technetwork/java/javase/downloads/index.html
+ - Ant: http://ant.apache.org
+
+Once installed you should set the following environment variables:
+ - JAVA_HOME to the directory where Java has been installed.
+ - ANT_HOME to the directory where Ant has been installed.
+
+Note that because Ant or Java is not installed,
+the "Compile and run demo" feature at the end of the installation will not work.

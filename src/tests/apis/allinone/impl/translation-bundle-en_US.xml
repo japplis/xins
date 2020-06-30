@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- $Id: translation-bundle-en_US.xml,v 1.4 2011/03/19 09:11:18 agoubard Exp $ -->
+<translation-bundle>
+	<translation entry="10000">Found the number <value-of-param name="number" /> in the parameter <value-of-param name="parameter" format="quoted" />.</translation>
+	<translation entry="10001">The system could not find any number.</translation>
+	<translation entry="10002">Odd: <value-of-param name="odd"/>, more than 1000: <value-of-param name="moreThousands"/>, square: <value-of-param name="square"/>, with thread: <value-of-param name="thread" format="quoted"/>, time: <value-of-param name="date"/> .</translation>
+	<translation entry="10003">Test for error. Message: <exception-property name="message" />, Message2: <exception-property name="message" format="quoted" />.
+	Class: <exception-property name="class" />, Class2: <exception-property name="class" format="quoted"/>.</translation>
+</translation-bundle>
