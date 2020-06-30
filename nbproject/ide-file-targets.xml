@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="xins-IDE">
+    <property file="nbproject/nbjdk.properties"/>
+    <property location="${netbeans.user}/build.properties" name="user.properties.file"/>
+    <property file="${user.properties.file}"/>
+    <import file="jdk.xml"/>
+    <target name="-profile-check">
+        <startprofiler freeform="true"/>
+    </target>
+    <target depends="-jdk-init,-profile-check" if="profiler.configured" name="profile-nb">
+			<ant antfile="build.xml" target="profile-perftests" />
+    </target>
+</project>

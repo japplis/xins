@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+ $Id: default_resultcodes.xml,v 1.14 2013/01/18 10:41:47 agoubard Exp $
+
+ Default result codes.
+-->
+
+<resultcodes rcsversion="$Revision: 1.14 $" rcsdate="$Date: 2013/01/18 10:41:47 $">
+
+	<!-- Disabled function -->
+	<code
+	name="_DisabledFunction"
+	value="_DisabledFunction">
+		<description>The function is currently disabled.</description>
+	</code>
+
+
+	<!-- Disabled API -->
+	<code
+	name="_DisabledAPI"
+	value="_DisabledAPI">
+		<description>The API is currently disabled.</description>
+	</code>
+
+
+	<!-- Internal error -->
+	<code
+	name="_InternalError"
+	value="_InternalError">
+		<description>There was an internal error.</description>
+	</code>
+
+
+	<!-- Invalid call request (client error) -->
+	<code
+	name="_InvalidRequest"
+	value="_InvalidRequest"
+	onlyIfInputParameters="true">
+		<description>Indicates that the request is considered invalid since it does not match the criteria defined by the specification.</description>
+	</code>
+
+
+	<!-- Function not specified (client error) -->
+	<code
+	name="_FunctionNotSpecified"
+	value="_FunctionNotSpecified">
+		<description>Indicates that the request does not contain which function should be called.</description>
+	</code>
+
+
+	<!-- Function not found (client error) -->
+	<code
+	name="_FunctionNotFound"
+	value="_FunctionNotFound">
+		<description>Indicates that the function of the request does not exist.</description>
+	</code>
+
+
+	<!-- Invalid Request Format (client error) -->
+	<code
+	name="_InvalidRequestFormat"
+	value="_InvalidRequestFormat">
+		<description>Indicates that the input format is invalid for the calling convention.</description>
+	</code>
+
+
+	<!-- Not Allowed (server error) -->
+	<code
+	name="_NotAllowed"
+	value="_NotAllowed">
+		<description>Indicates that the user is not allowed to call the function.</description>
+	</code>
+
+
+	<!-- Invalid call response (server error) -->
+	<code
+	name="_InvalidResponse"
+	value="_InvalidResponse"
+	onlyIfInputParameters="false">
+		<description>Indicates that the implementation produced a response that does not match the criteria defined by the specification. Typical callers should treat this like an internal error.</description>
+	</code>
+
+</resultcodes>

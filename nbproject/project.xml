@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <!--Do not use Project Properties customizer when editing this file manually.-->
+            <name>xins</name>
+            <properties/>
+            <folders>
+                <source-folder>
+                    <label>src\java-client-framework</label>
+                    <type>java</type>
+                    <location>src/java-client-framework</location>
+                </source-folder>
+                <source-folder>
+                    <label>src\java-common</label>
+                    <type>java</type>
+                    <location>src/java-common</location>
+                </source-folder>
+                <source-folder>
+                    <label>src\java-server-framework</label>
+                    <type>java</type>
+                    <location>src/java-server-framework</location>
+                </source-folder>
+                <source-folder>
+                    <label>src\tests</label>
+                    <type>java</type>
+                    <location>src/tests</location>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>java</target>
+                </action>
+                <action name="clean">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                </action>
+                <action name="javadoc">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>javadoc</target>
+                </action>
+                <action name="test">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>test-netbeans</target>
+                </action>
+                <action name="rebuild">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                    <target>java</target>
+                </action>
+                <action name="debug">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>test-netbeans-debug</target>
+                </action>
+                <action name="run">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>test-netbeans</target>
+                </action>
+                <action name="profile">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>profile-nb</target>
+                </action>
+            </ide-actions>
+            <export>
+                <type>folder</type>
+                <location>build/classes/java-client</location>
+                <script>nbproject/nbjdk.xml</script>
+                <build-target>java</build-target>
+            </export>
+            <export>
+                <type>folder</type>
+                <location>build/classes/java-common</location>
+                <script>nbproject/nbjdk.xml</script>
+                <build-target>java</build-target>
+            </export>
+            <export>
+                <type>folder</type>
+                <location>build/classes/java-server</location>
+                <script>nbproject/nbjdk.xml</script>
+                <build-target>java</build-target>
+            </export>
+            <export>
+                <type>folder</type>
+                <location>build/classes/logdoc</location>
+                <script>nbproject/nbjdk.xml</script>
+                <build-target>java</build-target>
+            </export>
+            <export>
+                <type>folder</type>
+                <location>build/classes/tests</location>
+                <script>nbproject/nbjdk.xml</script>
+                <build-target>java</build-target>
+            </export>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>src\java-client-framework</label>
+                        <location>src/java-client-framework</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>src\java-common</label>
+                        <location>src/java-common</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>src\java-server-framework</label>
+                        <location>src/java-server-framework</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>src\tests</label>
+                        <location>src/tests</location>
+                    </source-folder>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="javadoc"/>
+                    <ide-action name="test"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="debug"/>
+                    <ide-action name="run"/>
+                    <action>
+                        <label>debug</label>
+                        <target>netbeans-debug</target>
+                    </action>
+                    <ide-action name="profile"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/2">
+            <compilation-unit>
+                <package-root>src/java-client-framework</package-root>
+                <package-root>src/java-common</package-root>
+                <package-root>src/java-server-framework</package-root>
+                <package-root>src/tests</package-root>
+                <classpath mode="compile">build/classes/java-server;lib/commons-codec.jar;lib/commons-logging.jar;lib/commons-net.jar;lib/junit.jar;lib/log4j.jar;lib/xmlenc.jar;src/tests/build/classes-api/allinone;src/tests/build/classes-types/allinone;src/tests/build/classes-capi/allinone;../xins-examples/xins-project/build/classes-api/petstore;src/tests/lib/commons-fileupload.jar;src/tests/lib/commons-io.jar;lib/servlet.jar;lib/json.jar;lib/spring.jar;lib/juxy.jar;src/tests/myproject-capi.jar;src/tests/build/capis/allinone-capi.jar;src/tests/build/capis/portal-capi.jar;src/tests/build/classes-api/allinone;src/tests/build/classes-api/portal;build/xins-client.jar;build/xins-common.jar;build/xins-server.jar;C:\Java\NetBeans\NetBeans7.1\java\ant/lib/ant.jar;lib/httpclient.jar;lib/httpcore.jar;lib/protobuf.jar;lib/netty.jar;lib/znerd-util.jar;lib/logdoc.jar;lib/async-http-client.jar</classpath>
+                <built-to>build/classes/java-client</built-to>
+                <built-to>build/classes/java-common</built-to>
+                <built-to>build/classes/java-server</built-to>
+                <built-to>build/classes/logdoc</built-to>
+                <built-to>build/classes/tests</built-to>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+        </java-data>
+        <preferences xmlns="http://www.netbeans.org/ns/auxiliary-configuration-preferences/1">
+            <module name="org-netbeans-modules-editor-indent">
+                <node name="CodeStyle">
+                    <property name="usedProfile" value="project"/>
+                    <node name="project">
+                        <property name="spaces-per-tab" value="2"/>
+                        <property name="tab-size" value="2"/>
+                        <property name="indent-shift-width" value="2"/>
+                        <property name="text-limit-width" value="80"/>
+                        <property name="expand-tabs" value="false"/>
+                    </node>
+                </node>
+                <node name="text">
+                    <node name="x-java">
+                        <node name="CodeStyle">
+                            <node name="project">
+                                <property name="spaces-per-tab" value="3"/>
+                                <property name="tab-size" value="3"/>
+                                <property name="indent-shift-width" value="3"/>
+                                <property name="text-limit-width" value="80"/>
+                                <property name="expand-tabs" value="true"/>
+                            </node>
+                        </node>
+                    </node>
+                </node>
+            </module>
+        </preferences>
+    </configuration>
+</project>

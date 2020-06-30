@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries version="2">
+	<library name="xins" systemlibrary="false">
+		<archive javadoc="file:/%%XINS_HOME%%/docs/javadoc/" path="%%XINS_HOME%%/build/xins-server.jar" source="%%XINS_HOME%%/src/java-server-framework"/>
+		<archive javadoc="file:/%%XINS_HOME%%/docs/javadoc/" path="%%XINS_HOME%%/build/xins-common.jar" source="%%XINS_HOME%%/src/java-common"/>
+		<archive javadoc="file:/%%XINS_HOME%%/docs/javadoc/" path="%%XINS_HOME%%/build/xins-client.jar" source="%%XINS_HOME%%/src/java-client"/>
+		<archive javadoc="file:/%%XINS_HOME%%/docs/javadoc/" path="%%XINS_HOME%%/build/logdoc.jar" source="%%XINS_HOME%%/src/java-common"/>
+		<archive path="%%XINS_HOME%%/lib/xmlenc.jar"/>
+		<archive path="%%XINS_HOME%%/lib/commons-httpclient.jar"/>
+		<archive path="%%XINS_HOME%%/lib/commons-logging.jar"/>
+		<archive path="%%XINS_HOME%%/lib/jakarta-oro.jar"/>
+		<archive path="%%XINS_HOME%%/lib/junit.jar"/>
+		<archive path="%%XINS_HOME%%/lib/log4j.jar"/>
+		<archive path="%%XINS_HOME%%/lib/commons-codec.jar"/>
+		<archive path="%%XINS_HOME%%/lib/servlet.jar"/>
+	</library>
+</eclipse-userlibraries>

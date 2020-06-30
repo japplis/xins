@@ -1,0 +1,10 @@
+org.apache.http
+org.apache.http.entity
+org.apache.http.impl
+org.apache.http.impl.entity
+org.apache.http.impl.io
+org.apache.http.io
+org.apache.http.message
+org.apache.http.params
+org.apache.http.protocol
+org.apache.http.util
