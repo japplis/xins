@@ -41,5 +41,5 @@ More detailed information can be found in the [documentation](docs/index.html).
 
 #### Links:
 * [Web site](https://www.xins.org).
-* [Online demo](http://xins.sourceforge.net/demo.html).
-* [Download](https://github.com/japplis/xins/releases/tag/3.1).
+* [Online demo](https://www.xins.org/demo.html).
+* [Download](https://github.com/japplis/xins/releases).

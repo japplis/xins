@@ -667,7 +667,7 @@ ${sf.file}</fail>
 	description="Creates and uploads package to the web server" />
 
 	<target name="installer" depends="-init-release">
-		<get src="http://xins.sourceforge.net/VERSION"
+		<get src="https://www.xins.org/VERSION"
 		     dest="../VERSION" />
 		<loadfile srcfile="../VERSION" property="exe.version">
 			<filterchain>

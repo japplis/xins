@@ -6,17 +6,17 @@
 	<version>3.1</version>
 	<packaging>jar</packaging>
 	<name>XINS server Framework</name>
-	<url>http://www.xins.org</url>
+	<url>https://www.xins.org</url>
 	<description>The XINS server framework</description>
 	<licenses>
 		<license>
 			<name>The BSD License</name>
-			<url>http://xins.sourceforge.net/COPYRIGHT</url>
+			<url>https://www.xins.org/COPYRIGHT</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
 	<scm>
-		<url>http://xins.cvs.sourceforge.net/xins/</url>
+		<url>https://github.com/japplis/xins/</url>
 	</scm>
 	<developers>
 		<developer>
